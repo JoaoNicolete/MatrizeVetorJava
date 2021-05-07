@@ -16,12 +16,17 @@ public class Exercicio04 {
 		double[][] matriz1 = new double[2][2];
 		double[][] matriz2 = new double[2][2];
 		int constante;
-		char opcao;
+		char opcao=0;
 		double[][] matriz3 = new double[2][2];
 		
 		Scanner ler = new Scanner(System.in);
 		
+		System.out.println("===================================");
+		System.out.println("=Sistema de operações com matrizes=");
+		System.out.println("===================================");
+		System.out.println();
 		System.out.println("Insira a matriz 1: ");
+		
 		for(int l=0; l<2; l++) {
 			for(int  c=0; c<2; c++) {
 				matriz1[l][c] = ler.nextDouble();
@@ -34,11 +39,16 @@ public class Exercicio04 {
 			}
 		}
 		
+		while(opcao!='5'){ 
+		
+		System.out.println("================================");
 		System.out.println("Digite o que deseja fazer: ");
 		System.out.println("(1) somar as duas matrizes ");
 		System.out.println("(2) subtrair a primeira matriz da segunda");
 		System.out.println("(3) adicionar uma constante as duas matrizes");
 		System.out.println("(4) imprimir as matrizes");
+		System.out.println("(5) Sair do programa");
+		System.out.println("================================");
 		opcao = ler.next().charAt(0);
 		
 		switch(opcao) {
@@ -102,10 +112,16 @@ public class Exercicio04 {
 					System.out.println();
 				}
 				break;
+			case '5':
+				System.out.println("================================");
+				System.out.println("Programa encerrado");
+				System.out.println("================================");
+				break;
 			default: 
 				System.out.println("Opção não reconhecida");
 				break;
 				
+			}
 		}
 		
 		ler.close();
