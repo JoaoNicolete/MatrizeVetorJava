@@ -114,7 +114,7 @@ public class Exercicio04 {
 				break;
 			case '5':
 				System.out.println("================================");
-				System.out.println("Programa encerrado");
+				System.out.println("=      Programa encerrado      =");
 				System.out.println("================================");
 				break;
 			default: 
